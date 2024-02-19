@@ -149,7 +149,10 @@ class _AddTodoState extends State<AddTodo> {
             Container(
               width: double.infinity,
               child: ElevatedButton(
-                onPressed: submitStudent,
+                onPressed: ()=>{
+                  submitStudent(),
+                  Navigator.of(context).pushNamed('/home')
+                },
                 child: Text(
                   "Submit data",
                   style: TextStyle(
