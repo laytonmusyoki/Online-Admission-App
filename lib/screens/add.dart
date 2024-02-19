@@ -34,7 +34,7 @@ class _AddTodoState extends State<AddTodo> {
       };
       //   submit data to the server
       print(body);
-      final url='https://8407-41-90-70-190.ngrok-free.app/api/add';
+      final url='https://b30d-105-167-121-35.ngrok-free.app/api/add';
       final uri=Uri.parse(url);
       final response= await http.post(uri,
           body: jsonEncode(body),
