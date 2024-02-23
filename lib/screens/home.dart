@@ -23,8 +23,7 @@ class _HomescreenState extends State<Homescreen> {
   }
 
   Future<void> getStudents() async {
-    final url =
-        'https://b30d-105-167-121-35.ngrok-free.app/api/students';
+    final url = 'https://5ddd-41-89-99-5.ngrok-free.app/api/students';
     final uri = Uri.parse(url);
     final response = await http.get(uri);
     print(response.statusCode);
@@ -54,6 +53,7 @@ class _HomescreenState extends State<Homescreen> {
           ),
         ),
       ),
+
       floatingActionButton: FloatingActionButton.extended(
         onPressed: () {
           Navigator.of(context).pushNamed('/add');
