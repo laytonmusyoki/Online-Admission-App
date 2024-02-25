@@ -164,6 +164,23 @@ class _AddTodoState extends State<AddTodo> {
                 )
             ),
             SizedBox(height: 20,),
+            TextField(
+                controller: courseController,
+                decoration: InputDecoration(
+                  labelText: "Enter course",
+                  filled: true,
+                  fillColor: Colors.grey.withOpacity(0.2),
+                  enabledBorder: UnderlineInputBorder(
+                    borderRadius: BorderRadius.circular(10),
+                    borderSide: BorderSide(color: Colors.grey),
+                  ),
+                  focusedBorder: OutlineInputBorder(
+                    borderRadius: BorderRadius.circular(10),
+                    borderSide: BorderSide(color: Colors.grey),
+                  ),
+                )
+            ),
+            SizedBox(height: 20,),
             Container(
               width: double.infinity,
               child: ElevatedButton(
